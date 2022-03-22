@@ -1,0 +1,17 @@
+# Ignore everything in roles dir
+#/*
+__pycache__/
+.env
+.pytest_cache/
+*/roles/*
+
+
+# Except:
+# the .gitignore file
+!.gitignore
+# the requirements file
+!requirements.yml
+# Readme if you have one
+!README.md
+# and any specific role we want to version locally
+!locally-versioned-role*/

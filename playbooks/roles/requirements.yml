@@ -1,0 +1,12 @@
+- name: infraroles.common
+  src: git@github.com:atlastechnol/ansible-role-common.git
+  scm: git
+  version: main
+
+- name: geerlingguy.swap
+  src: geerlingguy.swap
+  version: 1.0.2
+
+- name: geerlingguy.redis
+  src: geerlingguy.redis
+  version: 1.7.0

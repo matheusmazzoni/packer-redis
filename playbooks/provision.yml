@@ -1,0 +1,11 @@
+- name: Create Redis server
+  hosts: all
+  become: true
+  become_method: sudo
+  pre_tasks:
+    - name: Include Variables
+      include_vars: vars/main.yml
+  roles:
+    - role: infraroles.common
+    - role: geerlingguy.swap
+    - role: geerlingguy.redis        
